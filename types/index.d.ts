@@ -144,6 +144,17 @@ declare namespace jest {
     toHaveBeenCalledAfter(mock: jest.Mock): R;
 
     /**
+     * Use `.toHaveBeenCalledOnce` when checking if a `Mock` was called exactly once.
+     */
+    toHaveBeenCalledOnce(): R;
+
+    /**
+     * Use `.toHaveBeenCalledOnceWith` when checking if a `Mock` was called once with expected values.
+     * @param {<*>} args
+     */
+    toHaveBeenCalledOnceWith(...args: any[]): R;
+
+    /**
      * Use `.toBeNumber` when checking if a value is a `Number`.
      */
     toBeNumber(): R;
